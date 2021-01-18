@@ -23,7 +23,7 @@ bot.on('message', msg => {
       msg.reply('Please tag a valid user!');
     }
   } else */
-  if (msg.content.startsWith('-- Nouvelle Candidature --')) {
+  if (msg.content.startsWith('!vote') || msg.content.includes('As-tu quelque chose à ajouter ?') ) {
     msg.react('✅');
     setTimeout(function(){
       msg.react('❎');
